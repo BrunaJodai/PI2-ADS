@@ -3,7 +3,7 @@ se o usuário digitar “9”, deverá ser exibido no console “NOVE”). O pro
 números por extenso de 0 a 9 e, caso o número seja negativo ou tenha mais de uma casa decimal 
 (maior que 9), mostrar uma mensagem de erro. O código que efetua a leitura e a validação dos 
 valores e o código que obtém o valor por extenso devem ser separados em métodos diferentes.*/
-package exercicios;
+package ADO1;
 
 import java.util.Scanner;
 

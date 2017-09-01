@@ -5,7 +5,7 @@ a.Se a média for menor que 5, exibir “REPROVADO”
 b.Se a média for maior ou igual a 5 e menor que 9, exibir “APROVADO”
 c.Se a média for 9, exibir “PARABÉNS”
 d.Se a média for 10, exibir “MASTER OF THE UNIVERSE” */
-package exercicios;
+package ADO1;
 
 import java.util.Scanner;
 

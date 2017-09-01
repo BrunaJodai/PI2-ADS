@@ -5,7 +5,7 @@ devem ser separadas em métodos diferentes.
 
 verifica se é um numero
 verifica se é par ou impar e primo*/
-package exercicios;
+package ADO1;
 
 import java.util.Scanner;
 

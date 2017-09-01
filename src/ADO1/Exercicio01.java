@@ -3,7 +3,7 @@ número é maior ou igual a 50,0. Caso verdadeiro, mostre a mensagem “SUCESSO�
 a mensagem “ERRO”. Após a verificação, saia do programa emitindo a mensagem “FIM DO PROGRAMA”, 
 independentemente do resultado. Construa o programa de forma que os métodos de leitura e verificação 
 fiquem separados do método principal da aplicação.*/
-package exercicios;
+package ADO1;
 
 import java.util.Scanner;
 

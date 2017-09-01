@@ -2,7 +2,7 @@
 Em seguida, permita que o usuário consulte quais aulas terá em determinado dia da semana ou imprima 
 as aulas de todos os dias da semana. O programa só deverá ser encerrado quando o usuário digitar “sair”, 
 a qualquer momento. */
-package exercicios;
+package ADO1;
 
 public class Exercicio09 {
     
