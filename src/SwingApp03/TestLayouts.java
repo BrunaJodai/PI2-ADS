@@ -1,6 +1,5 @@
 package SwingApp03;
 
-import static SwingApp03.SwingApp03.criarGUI;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import javax.swing.JButton;
