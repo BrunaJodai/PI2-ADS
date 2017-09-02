@@ -4,10 +4,25 @@ as aulas de todos os dias da semana. O programa só deverá ser encerrado quando
 a qualquer momento. */
 package ADO1;
 
+import java.util.Scanner;
+
 public class Exercicio09 {
-    
+
+    static Scanner console = new Scanner(System.in);
+
     public static void main(String[] args) {
-        
+
     }
-    
+
+    static String[][] preencheAulas(String[][] grade) {
+        for (int i = 0; i < grade.length; i++) {
+            for (int j = 0; j < grade[i].length; j++) {
+                System.out.printf("[%d][%d]: ", i, j);
+                grade[i][j] = console.nextLine();
+            }
+        }
+
+        return grade;
+    }
+
 }
