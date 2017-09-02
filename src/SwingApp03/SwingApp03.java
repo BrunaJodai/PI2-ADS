@@ -3,6 +3,7 @@ package SwingApp03;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javafx.scene.control.ComboBox;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -16,6 +17,7 @@ public class SwingApp03 {
 
     public static void main(String[] args) {
         Runnable thread = new Runnable() {
+            @Override
             public void run() {
                 criarGUI();
             }
@@ -40,22 +42,25 @@ public class SwingApp03 {
         group.add(radio01);
         group.add(radio02);
 
-        JButton button = new JButton("Botão 01");
-        panel.add(button);
-
-        button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(frame, "Opção 01: " + radio01.isSelected()
-                        + "\nOpção 02: " + radio02.isSelected());
-            }
-        });
-
         String[] opcoesCombo = {"Selecione", "Opção 01",
             "Opção 02", "Opção 03", "Opção 04"};
         JComboBox comboBox = new JComboBox(opcoesCombo);
         panel.add(comboBox);
 
+        JButton button = new JButton("Botão 01");
+        panel.add(button);
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frame, "Opção 01: " + radio01.isSelected()
+                        + "\nOpção 02: " + radio02.isSelected()
+                        + "\nOpção selecionada: " + comboBox.getSelectedItem());
+            }
+        });
+
         frame.pack();
         frame.setVisible(true);
+
     }
 }
